@@ -34,9 +34,11 @@ const Sidebar = () => {
               <TooltipComponent content="Menu" position="BottomCenter">
                 <button
                   type="button"
-                  onClick={() => setActiveMenu((prevActiveMenu) => prevActiveMenu)}
-                  className="text-xl p-3 rounded-full hover:bg-light-gray mt-4 block
-                md:hidde"
+                  onClick={() => setActiveMenu(
+                    (prevActiveMenu) => 
+                    !prevActiveMenu)}
+                  className="text-xl  rounded-full p-3 hover:bg-light-gray mt-4 block
+                md:hidden"
                 >
                   <MdOutlineCancel />
                 </button>
@@ -45,16 +47,20 @@ const Sidebar = () => {
             <div className="mt-10">
               {links.map((item) => (
                 <div key={item.title}>
-                  <p
-                    className="text-gray-400 m-3
-                mt-4 uppercase"
-                  >
-                    {item.title}
+                  <p className="text-gray-400 m-3 mt-4 uppercase">
+                    {item.title}  
                   </p>
                   {item.links.map((link) => (
-                    <NavLink to={`/${link.name}`} key={link.name} onClick={() => {}} className={({ isActive }) => (isActive ? activeLink : normalLink)}>
+                    <NavLink
+                      to={`/${link.name}`}
+                      key={link.name}
+                      onClick={() => {}}
+                      className={({ isActive }) => isActive ? activeLink : normalLink}
+                      >
                       {link.icon}
-                      <span className="capitalize">{link.name}</span>
+                      <span className="capitalize">
+                        {link.name}
+                      </span>
                     </NavLink>
                   ))}
                 </div>
