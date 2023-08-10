@@ -39,7 +39,7 @@ module.exports = {
         590: "590px",
       },
       backgroundImage: {
-        "hero-pattern": "url('https://demos.wrappixel.com/premium-admin-templates/react/flexy-react/main/static/media/welcome-bg-2x-svg.25338f53.svg')",
+        "hero-pattern": "url('https://i.pinimg.com/564x/30/eb/39/30eb39a67aad8e84c8ea38d2b2032a41.jpg')",
       },
     },
   },
