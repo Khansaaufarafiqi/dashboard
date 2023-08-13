@@ -619,9 +619,9 @@ export const earningData = [
     amount: '39,354',
     percentage: '-4%',
     title: 'Customers',
+    pcColor: "red-600",
     iconColor: '#03C9D7',
     iconBg: '#E5FAFB',
-    pcColor: "red-600",
   },
   {
     icon: <BsBoxSeam />,
