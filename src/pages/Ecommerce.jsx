@@ -31,7 +31,7 @@ const Ecommerce = () => {
             {earningData.map((item) => (
               <div key={item.title}
               className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg
-              md:w-56 p-4 pt-9 rounded-2xl">
+              md:w-52 p-4 pt-9 rounded-2xl">
                 <button type="button"
                 style={{color: item.iconColor, backgroundColor: item.iconBg}}
                 className="text-2xl opacity-0.9 rounded-full p-4 hover:drop-shadow-xl">
@@ -53,9 +53,15 @@ const Ecommerce = () => {
           </div>
         </div>
         
+        <div className="flex gap-10 flex-wrap justify-center">
+            <div className="bg-white dark:text-gray-200 dark:bg-secondary-dark-bg m-3 p-4 rounded-2xl md:w-780">
+
+            </div>
+        </div>
+
       </div>
     </>
   );
-};
+}
 
 export default Ecommerce;
