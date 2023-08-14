@@ -115,5 +115,4 @@ const Ecommerce = () => {
     </>
   );
 }
-
 export default Ecommerce;
